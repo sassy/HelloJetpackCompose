@@ -26,15 +26,8 @@ fun MessageCard(name: String) {
     Text(text = "Hello $name!")
 }
 
+@Preview
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    HelloJetpackComposeTheme {
-        Greeting("Android")
-    }
+fun PreviewMessageCard() {
+    MessageCard("Android")
 }
